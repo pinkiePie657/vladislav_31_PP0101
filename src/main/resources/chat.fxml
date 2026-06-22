@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<VBox spacing="15" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="ru.factory.controller.ChatController" styleClass="content-area">
+    <padding><Insets top="20" right="20" bottom="20" left="20"/></padding>
+    <Label text="Чат сотрудников завода" style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #2C3E50;"/>
+    <ListView fx:id="chatListView" VBox.vgrow="ALWAYS" styleClass="chat-list"/>
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <TextField fx:id="messageInput" HBox.hgrow="ALWAYS" promptText="Напишите сообщение..."
+                   style="-fx-pref-height: 40; -fx-background-radius: 5;"/>
+        <Button text="Отправить" onAction="#sendMessage" defaultButton="true"
+                style="-fx-background-color: #E67E22; -fx-text-fill: white; -fx-pref-height: 40; -fx-pref-width: 100; -fx-font-weight: bold; -fx-cursor: hand;"/>
+    </HBox>
+</VBox>

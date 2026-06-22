@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<VBox alignment="CENTER" spacing="15.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.factory.controller.LoginController" style="-fx-background-color: #2C3E50;">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+    <Label text="ВХОД В СИСТЕМУ" style="-fx-text-fill: white; -fx-font-size: 18; -fx-font-weight: bold;"/>
+    <TextField fx:id="userField" promptText="Логин" style="-fx-pref-width: 200;"/>
+    <PasswordField fx:id="passField" promptText="Пароль" style="-fx-pref-width: 200;"/>
+    <Button text="ВОЙТИ" onAction="#onLoginClick"
+            style="-fx-background-color: #E67E22; -fx-text-fill: white; -fx-font-weight: bold; -fx-cursor: hand; -fx-pref-width: 200;"/>
+    <Hyperlink text="Регистрация нового сотрудника" onAction="#toRegister" style="-fx-text-fill: #BDC3C7;"/>
+    <Button text="Продолжить как гость" onAction="#guestLogin"
+            style="-fx-background-color: #95A5A6; -fx-text-fill: white; -fx-font-weight: bold; -fx-pref-width: 200;"/>
+</VBox>

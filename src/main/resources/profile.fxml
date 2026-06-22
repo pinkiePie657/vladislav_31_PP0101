@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<VBox spacing="15" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="ru.factory.controller.ProfileController" styleClass="content-area">
+    <padding><Insets top="30" right="30" bottom="30" left="30"/></padding>
+    <Label text="Профиль сотрудника" style="-fx-font-size: 22px; -fx-font-weight: bold;"/>
+    <TextField fx:id="nameField" promptText="ФИО"/>
+    <DatePicker fx:id="birthDatePicker" promptText="Дата рождения"/>
+    <Button text="Сохранить изменения" onAction="#saveProfile" style="-fx-background-color: #27AE60; -fx-text-fill: white;"/>
+    <Hyperlink text="← Вернуться" onAction="#backToDashboard" style="-fx-text-fill: #3498DB;"/>
+</VBox>

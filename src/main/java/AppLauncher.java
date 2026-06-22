@@ -1,0 +1,7 @@
+import ru.factory.Main;
+
+public class AppLauncher {
+    public static void main(String[] args) {
+        Main.main(args);
+    }
+}

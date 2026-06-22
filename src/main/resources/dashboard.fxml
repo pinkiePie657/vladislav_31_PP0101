@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<HBox fx:id="mainRoot" prefHeight="600.0" prefWidth="900.0"
+      stylesheets="@style.css"
+      xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="ru.factory.controller.MainController">
+    <children>
+        <VBox prefWidth="200.0" styleClass="sidebar" spacing="10">
+            <children>
+                <Label text="ЗАВОД КИРПИЧА" style="-fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 16; -fx-padding: 0 0 20 0;"/>
+                <Button text="📦 Склад" onAction="#showInventory" styleClass="nav-button"/>
+                <Button text="🔥 Цех обжига" onAction="#showProduction" styleClass="nav-button"/>
+                <Button text="💬 Чат завода" onAction="#showChat" styleClass="nav-button"/>
+                <Button text="👤 Профиль" onAction="#showProfile" styleClass="nav-button"/>
+                <Button text="📊 Статистика" onAction="#showStatistics" styleClass="nav-button"/>
+                <Region VBox.vgrow="ALWAYS" />
+                <Button text="🔑 Войти в аккаунт" onAction="#login" styleClass="nav-button"/>
+                <Button text="🚪 Выйти из аккаунта" onAction="#handleLogout" styleClass="logout-button" prefWidth="180"/>
+            </children>
+        </VBox>
+        <StackPane fx:id="contentArea" HBox.hgrow="ALWAYS" styleClass="content-area">
+            <children>
+                <Label text="Добро пожаловать в систему управления!" style="-fx-font-size: 24; -fx-text-fill: #7F8C8D;"/>
+            </children>
+        </StackPane>
+    </children>
+</HBox>
